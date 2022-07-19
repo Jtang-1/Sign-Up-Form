@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+
+</head>
+<body>
+    <div class="flex-container">
+        <div id="left">
+            
+            <div id="logo">
+                <img src="img/hephaestos.jpg" alt="logo">
+                <h1 id="logo-title">
+                    Vulcan
+                </h1>
+            </div>
+            
+        </div>
+        <div id="right-flex-container">
+            <h1>This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams.<br> Sign up 
+                <em>now</em> to get started.
+            </h1>
+            <h1>
+                You <em>know</em> you want to.
+            </h1>
+
+            <form id="login-info-form" action="">
+                <div id="input">
+                    <h1>Let's do this!</h1>
+                    <fieldset>
+                        <label for="first-name">FIRST NAME
+                            <input type="text" id="first-name" name="firstName" required>
+                        </label>
+                        <label for="last-name">LAST NAME
+                            <input type="text" id="last-name" name="lastName" required>
+                        </label>
+                        <label for="email">EMAIL
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="phone-number">PHONE NUMBER
+                            <input type="tel" id="phone-number" name="phoneNumber" pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required>
+                        </label>
+                        <label for="password">PASSWORD
+                            <input type="password" id="password" name="password" required>
+                        </label>
+                    
+                        <label for="passwordc">CONFIRM PASSWORD
+                            <input type="password" id="passwordc" name="confirmPassword" required>
+                            <div id="passwordc-error"></div>
+                        </label>
+                    </fieldset>
+                </div>
+
+                <button type="submit">Create Account</button>
+            </form>
+
+            <div id="login">
+                Already have an account? <a href>Log in</a> 
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
